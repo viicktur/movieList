@@ -1,7 +1,7 @@
-import React from "react";
+import React, { Component } from "react";
 import Card from "../components/Card/Card";
 
-class List extends React.Component {
+class List extends Component {
   constructor() {
     super();
     this.state = {
@@ -30,7 +30,7 @@ class List extends React.Component {
     return (
       <div className="row">
         {data.map(movie => (
-          <div class="col-sm-2">
+          <div className="col-sm-2">
             <Card key={movie.id} movie={movie} />
           </div>
         ))}
